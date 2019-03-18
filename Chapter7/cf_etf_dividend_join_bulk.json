@@ -1,0 +1,15 @@
+{"index":{"_index":"cf_etf_dividend_join", "routing":"12345678"}}
+{"cf_etf_dividend":{"name":"dividend", "parent":"12345678"}, "exDate": "2017-12-19", "paymentDate": "2017-12-26", "recordDate": "2017-12-20", "declaredDate": "2016-12-28", "amount": 0.352788, "flag": "", "type": "Dividend income", "qualified": "", "indicated": "" }
+{"index":{"_index":"cf_etf_dividend_join", "routing":"12345678"}}
+{"cf_etf_dividend":{"name":"dividend", "parent":"12345678"},"exDate": "2017-12-19", "paymentDate": "2017-12-26", "recordDate": "2017-12-20", "declaredDate": "2017-12-18", "amount": 0.352788, "flag": "FI", "type": "Dividend income", "qualified": "", "indicated": "" }
+{"index":{"_index":"cf_etf_dividend_join", "routing":"12345678"}}
+{"cf_etf_dividend":{"name":"dividend", "parent":"12345678"}, "exDate": "2017-06-20", "paymentDate": "2017-06-26", "recordDate": "2017-06-22", "declaredDate": "2017-06-19", "amount": 0.243309, "flag": "", "type": "Dividend income", "qualified": "", "indicated": "" }
+{"index":{"_index":"cf_etf_dividend_join", "routing":"12345678"}}
+{"cf_etf_dividend":{"name":"dividend", "parent":"12345678"}, "exDate": "2016-12-21", "paymentDate": "2016-12-28", "recordDate": "2016-12-23", "declaredDate": "2016-12-20", "amount": 0.23977, "flag": "", "type": "Dividend income", "qualified": "", "indicated": "" }
+{"index":{"_index":"cf_etf_dividend_join", "routing":"12345678"}}
+{"cf_etf_dividend":{"name":"dividend", "parent":"12345678"}, "exDate": "2016-06-22", "paymentDate": "2016-06-28", "recordDate": "2016-06-24", "declaredDate": "2016-06-21", "amount": 0.227895, "flag": "", "type": "Dividend income", "qualified": "", "indicated": "" }
+{"index":{"_index":"cf_etf_dividend_join", "routing":"12345678"}}
+{"cf_etf_dividend":{"name":"dividend", "parent":"12345678"},"exDate": "2015-12-21", "paymentDate": "2015-12-28", "recordDate": "2015-12-23", "declaredDate": "2015-12-18", "amount": 0.103705, "flag": "", "type": "Dividend income", "qualified": "", "indicated": ""}
+{"index":{"_index":"cf_etf_dividend_join", "routing":"12345678"}}
+{"cf_etf_dividend":{"name":"dividend", "parent":"12345678"}, "exDate": "2015-06-25", "paymentDate": "2015-07-01", "recordDate": "2015-06-29", "declaredDate": "2015-06-24", "amount": 0.111075, "flag": "", "type": "Dividend income", "qualified": "", "indicated": ""}
+
