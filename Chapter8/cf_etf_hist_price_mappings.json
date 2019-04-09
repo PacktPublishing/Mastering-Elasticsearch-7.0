@@ -1,0 +1,57 @@
+{
+        "mappings": {
+            "properties": {
+                "change": {
+                    "type": "float"
+                },
+                "changeOverTime": {
+                    "type": "float"
+                },
+                "changePercent": {
+                    "type": "float"
+                },
+                "close": {
+                    "type": "float"
+                },
+                "date": {
+                    "type": "date"
+                },
+                "high": {
+                    "type": "float"
+                },
+                "label": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "low": {
+                    "type": "float"
+                },
+                "open": {
+                    "type": "float"
+                },
+                "symbol": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "unadjustedVolume": {
+                    "type": "long"
+                },
+                "volume": {
+                    "type": "long"
+                },
+                "vwap": {
+                    "type": "float"
+                }
+            }
+        }
+}
