@@ -2,27 +2,24 @@ package com.example.client.restclient.controller;
 
 import java.util.Map;
 
-import org.apache.http.entity.ContentType;
-import org.apache.http.nio.entity.NStringEntity;
 import org.elasticsearch.client.Request;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.client.restclient.service.impl.LowLevelRestClientService;
-import com.sun.org.apache.xml.internal.serialize.Method;
 
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+
 
 @RestController
 @RequestMapping("/api/llrestclient")
@@ -34,7 +31,7 @@ public class LowLevelRestClientController {
 	
 	@ApiOperation("Low Level REST Client GET Request")
 	@ApiImplicitParams({
-		@ApiImplicitParam(paramType = "query", name="uRL", type="String", required=true, value="/"),
+		@ApiImplicitParam(paramType = "query", name="uRL", type="string", required=true, defaultValue="/")
 	})
 	@RequestMapping(value="/get", method=RequestMethod.GET)
 	public ResponseEntity<Map<String, Object>> performGetRequest(
@@ -47,15 +44,15 @@ public class LowLevelRestClientController {
 	
 	@ApiOperation("Low Level REST Client POST Request")
 	@ApiImplicitParams({
-		@ApiImplicitParam(paramType = "query", name="uRL", type="String", required=true, value="/"),
-		@ApiImplicitParam(paramType = "query", name="requestBody", type="String", required=true, value=""),
+		@ApiImplicitParam(paramType = "query", name="uRL", type="String", required=true, defaultValue="/"),
+		@ApiImplicitParam(paramType = "body", name="body", type="String", required=true, defaultValue="{}"),
 	})
 	@RequestMapping(value="/post", method=RequestMethod.POST)
 	public ResponseEntity<Map<String, Object>> performPostRequest(
 			@RequestParam(value = "uRL") String uRL,
-			@RequestParam(value = "requestBody") String requestBody) throws Exception {
+			@RequestBody String body) throws Exception {
 				Request request = new Request("POST", uRL);
-				request.setJsonEntity(requestBody);
+				request.setJsonEntity(body);
 				//request.addParameter("pretty", "true");
 				Map<String,Object> response = llRestClient.performRequest(request);
 				return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
@@ -63,12 +60,13 @@ public class LowLevelRestClientController {
 	
 	@ApiOperation("Low Level REST Client PUT Request")
 	@ApiImplicitParams({
-		@ApiImplicitParam(paramType = "query", name="uRL", type="String", required=true, value="/"),
+		@ApiImplicitParam(paramType = "query", name="uRL", type="string", required=true, defaultValue="/"),
+		@ApiImplicitParam(paramType = "body", name="requestBody", type="string", required=true, defaultValue="{}")
 	})
 	@RequestMapping(value="/put", method=RequestMethod.PUT)
 	public ResponseEntity<Map<String, Object>> performPutRequest(
 			@RequestParam(value = "uRL") String uRL,
-			@RequestParam(value = "requestBody") String requestBody) throws Exception {
+			@RequestBody String requestBody) throws Exception {
 				Request request = new Request("PUT", uRL);
 				request.setJsonEntity(requestBody);
 				//request.addParameter("pretty", "true");
@@ -78,7 +76,7 @@ public class LowLevelRestClientController {
 	
 	@ApiOperation("Low Level REST Client DELETE Request")
 	@ApiImplicitParams({
-		@ApiImplicitParam(paramType = "query", name="uRL", type="String", required=true, value="/"),
+		@ApiImplicitParam(paramType = "query", name="uRL", type="string", required=true, defaultValue="/"),
 	})
 	@RequestMapping(value="/delete", method=RequestMethod.DELETE)
 	public ResponseEntity<Map<String, Object>> performDeleteRequest(
@@ -91,13 +89,13 @@ public class LowLevelRestClientController {
 	
 	@ApiOperation("Low Level REST Client Async POST Request")
 	@ApiImplicitParams({
-		@ApiImplicitParam(paramType = "query", name="uRL", type="String", required=true, value="/"),
-		@ApiImplicitParam(paramType = "query", name="requestBody", type="String", required=true, value=""),
+		@ApiImplicitParam(paramType = "query", name="uRL", type="string", required=true, defaultValue="/"),
+		@ApiImplicitParam(paramType = "body", name="requestBody", type="string", required=true, defaultValue="{}"),
 	})
 	@RequestMapping(value="/async_post", method=RequestMethod.POST)
 	public ResponseEntity<Map<String, Object>> performAsyncPostRequest(
 			@RequestParam(value = "uRL") String uRL,
-			@RequestParam(value = "requestBody") String requestBody) throws Exception {
+			@RequestBody String requestBody) throws Exception {
 				Request request = new Request("POST", uRL);
 				request.setJsonEntity(requestBody);
 				//request.addParameter("pretty", "true");

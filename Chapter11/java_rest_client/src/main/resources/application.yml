@@ -5,6 +5,11 @@ server:
 spring:
   application:
     name: restClient
+
+elasticsearch:
+  host: localhost
+  rest-client-port: 9200
+  transport-client-port: 9300
     
 
     

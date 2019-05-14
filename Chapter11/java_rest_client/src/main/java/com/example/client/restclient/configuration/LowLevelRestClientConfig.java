@@ -10,11 +10,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.example.client.restclient.controller.LowLevelRestClientController;
 
 @Configuration
 public class LowLevelRestClientConfig {
-	public static final Logger logger = LoggerFactory.getLogger(LowLevelRestClientController.class);
+	public static final Logger logger = LoggerFactory.getLogger(LowLevelRestClientConfig.class);
 	
 	@Bean
 	public RestClient LowLevelRestClient() {

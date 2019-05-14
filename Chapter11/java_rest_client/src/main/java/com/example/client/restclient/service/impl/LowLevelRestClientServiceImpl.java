@@ -37,8 +37,8 @@ public class LowLevelRestClientServiceImpl implements LowLevelRestClientService 
 			}
 		}
 		
-		@SuppressWarnings("unchecked")
-		Map<String, Object> convertValue = (Map<String, Object>) (new ObjectMapper()).convertValue(clientResponse, Map.class);
+		Map<String, Object> convertValue = 
+				(Map<String, Object>) (new ObjectMapper()).convertValue(clientResponse, Map.class);
 		return convertValue;
 	}
 
@@ -46,7 +46,7 @@ public class LowLevelRestClientServiceImpl implements LowLevelRestClientService 
 	public Map<String, Object> performAsyncRequest(Request request) {
 		RestClientResponse clientResponse = new RestClientResponse();
 		restClient.performRequestAsync(request, new ResponseListener() {
-
+			RestClientResponse clientResponse = new RestClientResponse();
 			@Override
 			public void onSuccess(Response response) {
 				clientResponse.setStatusCode(response.getStatusLine().getStatusCode());
@@ -85,8 +85,8 @@ public class LowLevelRestClientServiceImpl implements LowLevelRestClientService 
 		});
 
 		clientResponse.setStatusCode(200);
-		@SuppressWarnings("unchecked")
-		Map<String, Object> convertValue = (Map<String, Object>) (new ObjectMapper()).convertValue(clientResponse, Map.class);
+		Map<String, Object> convertValue = 
+				(Map<String, Object>) (new ObjectMapper()).convertValue(clientResponse, Map.class);
 		return convertValue;
 	}
 
