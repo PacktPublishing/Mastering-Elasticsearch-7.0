@@ -17,3 +17,5 @@ class TestLowLevelClientSearch(unittest.TestCase):
         }
         response = self.es.search(index='cf_etf', body=body)
         self.assertEqual(response['hits']['total']['value'], 1)
+        print(response)
+
