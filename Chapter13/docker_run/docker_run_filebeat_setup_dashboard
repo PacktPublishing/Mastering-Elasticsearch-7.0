@@ -1,2 +1,0 @@
-#!/bin/bash
-docker run --net packt docker.elastic.co/beats/filebeat:7.0.0 setup --dashboards
