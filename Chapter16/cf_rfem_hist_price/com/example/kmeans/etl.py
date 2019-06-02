@@ -1,8 +1,7 @@
-from com.example.client.config.low_level_client_by_connection import ESLowLevelClientByConnection
+rom com.example.client.config.low_level_client_by_connection import ESLowLevelClientByConnection
 from elasticsearch_dsl import Search
 from elasticsearch_dsl.query import Q, Bool, Range, Term
-from elasticsearch_dsl.aggs import A, DateHistogram, ScriptedMetric, MovingAvg, BucketScript
-from pprint import pprint
+from elasticsearch_dsl.aggs import A, DateHistogram
 
 
 def etl(index='cf_rfem_hist_price', start_date='2018-12-26', end_date='2019-03-25', symbol='rfem'):
