@@ -27,15 +27,19 @@ def extract_es_data(sql_context):
     return df_features
 
 
-if __name__ == '__main__':
-        sqlContext = create_sql_context()
-        df_data = extract_es_data(sqlContext)
-        centers = create_anomaly_detection_model(df_data)
-        cSchema = StructType([StructField("changeOverTime", FloatType()), StructField("changePercent", FloatType()),
-                              StructField("volume", FloatType())])
-        df_centers = sqlContext.createDataFrame(pandas.DataFrame(centers), cSchema)
-        vecAssembler = VectorAssembler(inputCols=["changeOverTime", "changePercent", "volume"], outputCol="features")
-        df_centers_features = vecAssembler.transform(df_centers).select('features')
-        center_labels = find_anomalies(df_centers_features)
-        print(center_labels)
+def convert_data_to_features(data):
+    schema = StructType([StructField("changeOverTime", FloatType()), StructField("changePercent", FloatType()),
+                        StructField("volume", FloatType())])
+    df_data = sqlContext.createDataFrame(pandas.DataFrame(data), schema)
+    vec_assembler = VectorAssembler(inputCols=["changeOverTime", "changePercent", "volume"], outputCol="features")
+    df_features = vec_assembler.transform(df_data).select('features')
+    return df_features
 
+
+if __name__ == '__main__':
+    sqlContext = create_sql_context()
+    es_data = extract_es_data(sqlContext)
+    centers = create_anomaly_detection_model(es_data)
+    df_centers_features = convert_data_to_features(centers)
+    center_labels = find_anomalies(df_centers_features)
+    print(center_labels)
