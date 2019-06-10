@@ -1,4 +1,4 @@
-#!/home/wai/book/chapter17/eshadoop/bin/python3
+#!/home/wai/book/chapter17/eshadoop/bin/python3.6
 
 #
 # Licensed to the Apache Software Foundation (ASF) under one or more
