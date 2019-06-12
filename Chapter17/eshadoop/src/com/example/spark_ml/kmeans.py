@@ -15,7 +15,7 @@ def create_anomaly_detection_model(df_input):
     df_labels = model.transform(df_input).select('prediction')
     plot_points_with_label(df_input, df_labels)
     centers = model.clusterCenters()
-    return centers
+    return df_labels, centers
 
 
 def find_anomalies(points):
