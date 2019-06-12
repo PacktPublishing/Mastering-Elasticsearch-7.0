@@ -51,7 +51,10 @@
                 },
                 "vwap": {
                     "type": "float"
-                }
+                },
+		"prediction": {
+		    "type": "integer"
+		}
             }
         }
 }
