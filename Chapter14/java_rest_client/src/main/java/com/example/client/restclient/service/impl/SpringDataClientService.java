@@ -1,6 +1,5 @@
 package com.example.client.restclient.service.impl;
 
-import java.util.Map;
 
 //TODO: Wait for the support of Elasticsearch 7.0
 //public interface SpringDataClientService {

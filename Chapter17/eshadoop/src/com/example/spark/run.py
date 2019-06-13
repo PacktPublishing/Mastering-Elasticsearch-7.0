@@ -1,7 +1,7 @@
 from pyspark.sql import SparkSession
 import pyspark.sql.functions as f
 from pyspark.sql.types import *
-from pyspark.sql.functions import expr, lit
+from pyspark.sql.functions import expr
 from pyspark.ml.feature import VectorAssembler
 from com.example.spark_ml.kmeans import create_anomaly_detection_model, find_anomalies
 import pandas
@@ -9,17 +9,17 @@ import pandas
 
 # Create Spark Session
 def create_spark_session():
-    spark = SparkSession.builder.config("es.read.metadata", "true") \
-                .config("es.nodes.wan.only", "true").config("es.port", "9200") \
-                .config("es.net.ssl", "false").config("es.nodes", "http://localhost") \
-                .master("local").appName("anomalyDetection").getOrCreate()
+    spark = SparkSession.builder.master("local").appName("anomalyDetection").getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     return spark
 
 
 # Extract data from elasticsearch and select the fields for the anomaly detection
 def extract_es_data(spark):
-    reader = spark.read.format("org.elasticsearch.spark.sql")
+    reader = spark.read.format("org.elasticsearch.spark.sql") \
+                .option("es.read.metadata", "true") \
+                .option("es.nodes.wan.only", "true").option("es.port", "9200") \
+                .option("es.net.ssl", "false").option("es.nodes", "http://localhost")
     df = reader.load("cf_rfem_hist_price")
     df.createTempView("view1")
     df2 = spark_session.sql("Select volume, changePercent, changeOverTime from view1")
@@ -43,8 +43,10 @@ def write_es_data(df_es, df_labels_add):
     df_labels_row_index = df_labels_add.withColumn("row_index", f.monotonically_increasing_id())
     df_update = df_id_row_index.join(df_labels_row_index, on=["row_index"]).drop("row_index")
     df_update.write.format("org.elasticsearch.spark.sql").option("es.write.operation", "update") \
-                .option("es.mapping.id", "id").option("es.mapping.exclude", "id")\
-                .mode("append").save('cf_rfem_hist_price')
+        .option("es.nodes.wan.only", "true").option("es.port", "9200") \
+        .option("es.net.ssl", "false").option("es.nodes", "http://localhost") \
+        .option("es.mapping.id", "id").option("es.mapping.exclude", "id")\
+        .mode("append").save('cf_rfem_hist_price')
 
 
 if __name__ == '__main__':

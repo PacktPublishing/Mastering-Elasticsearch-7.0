@@ -4,5 +4,5 @@ import java.util.Map;
 
 
 public interface SqlJdbcClientService {
-	Map<String, Object> executeQuery(String url, String sqlStatement);
+	Map<String, Object> executeQuery(String sqlStatement);
 }

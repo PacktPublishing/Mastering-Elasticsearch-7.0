@@ -15,7 +15,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.client.restclient.configuration.SqlJdbcClientConfig;
 
 @Service
 public class SqlJdbcClientServiceImpl implements SqlJdbcClientService {
@@ -25,33 +24,25 @@ public class SqlJdbcClientServiceImpl implements SqlJdbcClientService {
 	Connection connection;
 
 	@Override
-	public Map<String, Object> executeQuery(String url, String sqlStatement) {
+	public Map<String, Object> executeQuery(String sqlStatement) {
 		List<Map<String, Object>> hitList = new ArrayList<Map<String, Object>>();
 		Map<String, Object> result = new HashMap<String, Object>();
 		Statement statement;
-		int count=0;
-		Connection new_connection=null;
+		int colCount=0, total=0;
 		
 		try {
-			if (url != null && !url.isEmpty())
-				statement = connection.createStatement();
-			else {
-				new_connection = SqlJdbcClientConfig.AdhocSqlJdbcClient(url);
-				statement = new_connection.createStatement();
-			}
+			statement = connection.createStatement();
 			ResultSet resultSet = statement.executeQuery(sqlStatement);
 			ResultSetMetaData rsmd = resultSet.getMetaData();
-			count = rsmd.getColumnCount();
+			colCount = rsmd.getColumnCount();
 			while (resultSet.next()) {
+				total++;
 				Map<String, Object> map = new HashMap<String, Object>();
-				for (int i=0; i<count; i++) {
+				for (int i=1; i<=colCount; i++) {
 					String columnName = rsmd.getColumnName(i);
 					map.put(columnName, resultSet.getObject(columnName));
 				}
 				hitList.add(map);
-			}
-			if (new_connection != null) {
-				new_connection.close();
 			}
 		} catch (SQLException e) {
 			logger.error(e.getMessage());
@@ -59,7 +50,7 @@ public class SqlJdbcClientServiceImpl implements SqlJdbcClientService {
 		}
 
 
-		result.put("total", count);
+		result.put("total", total);
 		result.put("hits", hitList.toArray(new HashMap[hitList.size()]));
 		return result;
 	}

@@ -32,15 +32,6 @@ public static final Logger logger = LoggerFactory.getLogger(LowLevelRestClientCo
 		return dataSource.getConnection();
 	}
 	
-	public static Connection AdhocSqlJdbcClient(String url) throws SQLException {
-		EsDataSource dataSource = new EsDataSource();
-		String esJdbcUrl = "jdbc:es://" + url;
-		dataSource.setUrl(esJdbcUrl);
-		Properties properties = new Properties();
-		dataSource.setProperties(properties);
-		return dataSource.getConnection();
-	}
-	
 	@PreDestroy
 	public void cleanup() {
 		(new Cleanup()).cleanup();
