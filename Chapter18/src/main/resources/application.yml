@@ -1,0 +1,29 @@
+server:
+  port: 10010
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: restClient
+
+elasticsearch:
+  host: localhost
+  rest-client-port: 9200
+  transport-client-port: 9300
+  scroll:
+    size: 1000
+    timeout: 300000
+  request:
+    timeout: 60s
+    
+spark:
+  es:
+    nodes: localhost
+    port: 9200
+    resource: cf_rfem_hist_price
+    index_auto_create: false
+    scroll:
+      size: 200
+      timeout: 120s
+    request:
+      timeout: 120s
