@@ -76,8 +76,8 @@
    },
 	"settings": {
 		"index": {
-			"number_of_shards":3,
-		}
+			"number_of_shards":3
+		},
 		"analysis": {
 			"analyzer" : {
 				"description_analyzer": {
