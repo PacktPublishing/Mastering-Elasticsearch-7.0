@@ -59,7 +59,7 @@ public class EsHadoopSparkServiceImpl implements EsHadoopSparkService {
 	
 	@Override
 	public Map<String, Object> buildAnomalyDetectionModel(HistoryData[] historyData, String[] fieldNames, int numOfClass) {
-		Map<String, Object> returns=new HashMap<String, Object>();
+		Map<String, Object> returns;
 		
 		Map<String, Dataset<Row>> dataSetMap = esSparkIO.readValues(historyData, fieldNames);
 		if (dataSetMap.isEmpty())
@@ -71,6 +71,7 @@ public class EsHadoopSparkServiceImpl implements EsHadoopSparkService {
 		if (prediction != null) {
 			returns = updateES(prediction, dataSet, historyData);
 		} else { 
+			returns=new HashMap<String, Object>();
 			returns.put("status", 500);
 		}
 	
@@ -78,15 +79,20 @@ public class EsHadoopSparkServiceImpl implements EsHadoopSparkService {
 	}
 
 	@Override
-	public Map<String, Object> AnomalyDetection(HistoryData latestData, String[] fieldNames) {
-
+	public Map<String, Object> anomalyDetection(HistoryData latestData, String[] fieldNames) {
+		Map<String, Object> returns;
 		HistoryData[] historyData = new HistoryData[1];
 		historyData[0] = latestData;
 		Map<String, Dataset<Row>> dataSetMap = esSparkIO.readValues(historyData, fieldNames);
 		Dataset<Row> dataSet = dataSetMap.get("dataSet");
 		Dataset<Row> dataSetAD = dataSetMap.get("dataSetAD");
   		Dataset<Row> prediction = anomalyDetection.predict(dataSetAD, fieldNames);
-  		Map<String, Object> returns = updateES(prediction, dataSet, historyData);
+		if (prediction != null) {
+			returns = updateES(prediction, dataSet, historyData);
+		} else { 
+			returns=new HashMap<String, Object>();
+			returns.put("status", 500);
+		}
 		return returns;
 	}
 	

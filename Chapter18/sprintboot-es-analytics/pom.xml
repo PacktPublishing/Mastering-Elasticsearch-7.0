@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>rest_client</artifactId>
+	<artifactId>esanalytics</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>java_rest_client</name>
-	<description>Java rest client project for Spring Boot</description>
+	<name>sprintboot-es-analytics</name>
+	<description>ABuilding Analytics RESTful Services</description>
 
 	<repositories>
 	  <repository>

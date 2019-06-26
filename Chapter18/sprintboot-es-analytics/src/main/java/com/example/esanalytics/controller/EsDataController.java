@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.esanalytics.service.ESDataService;
+import com.example.esanalytics.service.EsDataService;
 
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -24,7 +24,7 @@ public class EsDataController {
 	public static final Logger logger = LoggerFactory.getLogger(EsDataController.class);
 	
 	@Autowired
-	ESDataService service;
+	EsDataService service;
 	
 	@ApiOperation("Get Bollinger band data by symbol, startdate and enddate")
 	@ApiImplicitParams({
@@ -33,7 +33,7 @@ public class EsDataController {
 		@ApiImplicitParam(paramType = "query", name="endDate", type="string", required=true, defaultValue="2019-06-15"),
 		
 	})
-	@RequestMapping(value="/get-bollinger-band", method=RequestMethod.POST)
+	@RequestMapping(value="/get-bollinger-band", method=RequestMethod.GET)
 	public ResponseEntity<Map<String, Object>> getBollingerBand(
 			@RequestParam(value = "symbol", required=true) String symbol,
 			@RequestParam(value = "startDate", required=true) String startDate,
@@ -46,7 +46,7 @@ public class EsDataController {
 	@ApiImplicitParams({
 		@ApiImplicitParam(paramType = "query", name="symbol", type="string", required=true, defaultValue="rfem"),
 	})
-	@RequestMapping(value="/get-earliest-data", method=RequestMethod.POST)
+	@RequestMapping(value="/get-earliest-data", method=RequestMethod.GET)
 	public ResponseEntity<Map<String, Object>> getEarliestData(
 			@RequestParam(value = "symbol", required=true) String symbol) throws Exception {
 		Map<String,Object> response = service.getEarliestData(symbol);
@@ -57,7 +57,7 @@ public class EsDataController {
 	@ApiImplicitParams({
 		@ApiImplicitParam(paramType = "query", name="symbol", type="string", required=true, defaultValue="rfem"),
 	})
-	@RequestMapping(value="/get-latest-data", method=RequestMethod.POST)
+	@RequestMapping(value="/get-latest-data", method=RequestMethod.GET)
 	public ResponseEntity<Map<String, Object>> getLatestData(
 			@RequestParam(value = "symbol", required=true) String symbol) throws Exception {
 		Map<String,Object> response = service.getLatestData(symbol);

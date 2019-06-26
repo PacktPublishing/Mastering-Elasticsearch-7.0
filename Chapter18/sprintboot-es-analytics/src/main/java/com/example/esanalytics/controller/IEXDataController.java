@@ -32,7 +32,7 @@ public class IEXDataController {
 		@ApiImplicitParam(paramType = "query", name="period", type="string", required=true, defaultValue="1y"),
 		@ApiImplicitParam(paramType = "query", name="token", type="string", required=true),
 	})
-	@RequestMapping(value="/get-base-data", method=RequestMethod.POST)
+	@RequestMapping(value="/get-base-data", method=RequestMethod.GET)
 	public ResponseEntity<Map<String, Object>> geSymbolHistPrice(
 			@RequestParam(value = "symbol", required=true) String symbol,
 			@RequestParam(value = "period", required=true) String period,
@@ -46,7 +46,7 @@ public class IEXDataController {
 		@ApiImplicitParam(paramType = "query", name="symbol", type="string", required=true, defaultValue="rfem"),
 		@ApiImplicitParam(paramType = "query", name="token", type="string", required=true),
 	})
-	@RequestMapping(value="/get-daily-data", method=RequestMethod.POST)
+	@RequestMapping(value="/get-daily-data", method=RequestMethod.GET)
 	public ResponseEntity<Map<String, Object>> getSymbolDailySPrice(
 			@RequestParam(value = "symbol", required=true) String symbol,
 			@RequestParam(value = "token", required=true) String token) throws Exception {

@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.example.esanalytics.common.HistoryData;
-import com.example.esanalytics.service.ESDataService;
+import com.example.esanalytics.service.EsDataService;
 import com.example.esanalytics.service.IEXDataService;
 
 @Service
@@ -27,7 +27,7 @@ public class IEXDataServiceImpl implements IEXDataService {
 	private String uriPrefix;
 	
 	@Autowired
-	ESDataService esDataService;
+	EsDataService esDataService;
 	
 	@Override
 	public Map<String, Object> getBaseData(String token, String symbol, String period) {

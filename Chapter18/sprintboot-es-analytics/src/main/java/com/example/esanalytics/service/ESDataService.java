@@ -6,7 +6,7 @@ import com.example.esanalytics.common.BaseData;
 import com.example.esanalytics.common.HistoryData;
 import com.example.esanalytics.common.RegisterFund;
 
-public interface ESDataService {
+public interface EsDataService {
 	Map<String, Object> getBollingerBand(String symbol, String startDate, String endDate);
 	Map<String, Object> getEarliestData(String symbol);
 	boolean bulkIndexHistoryData(HistoryData[] historyData);

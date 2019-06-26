@@ -51,15 +51,15 @@ import org.springframework.util.ResourceUtils;
 import com.example.esanalytics.common.BaseData;
 import com.example.esanalytics.common.HistoryData;
 import com.example.esanalytics.common.RegisterFund;
-import com.example.esanalytics.service.ESDataService;
+import com.example.esanalytics.service.EsDataService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.nio.file.Paths;
 
 @Service
-public class ESDataServiceImpl implements ESDataService {
-	public static final Logger logger = LoggerFactory.getLogger(ESDataServiceImpl.class);
+public class EsDataServiceImpl implements EsDataService {
+	public static final Logger logger = LoggerFactory.getLogger(EsDataServiceImpl.class);
 
 	@Autowired
 	private RestHighLevelClient restClient;
@@ -94,7 +94,7 @@ public class ESDataServiceImpl implements ESDataService {
 					.initScript(new Script("state.totals=[]"))
 					.mapScript(new Script("state.totals.add((doc.high.value+doc.low.value+doc.close.value)/3)"))
 					.combineScript(new Script("double total=0; for (t in state.totals) {total += t} return total"))
-					.reduceScript(new Script("double total=0; for (t in states) {total += t} return total"));
+					.reduceScript(new Script("return states[0]"));
 			MovFnPipelineAggregationBuilder tDMA = 
 					PipelineAggregatorBuilders.movingFunction("tdMA", 
 							new Script("MovingFunctions.unweightedAvg(values)"), "tp.value", 20);

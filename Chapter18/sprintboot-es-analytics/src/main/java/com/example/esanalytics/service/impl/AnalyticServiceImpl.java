@@ -21,7 +21,7 @@ import org.joda.time.format.DateTimeFormatter;
 import com.example.esanalytics.common.HistoryData;
 import com.example.esanalytics.common.RegisterFund;
 import com.example.esanalytics.service.AnalyticService;
-import com.example.esanalytics.service.ESDataService;
+import com.example.esanalytics.service.EsDataService;
 import com.example.esanalytics.service.EsHadoopSparkService;
 import com.example.esanalytics.service.IEXDataService;
 import org.springframework.http.HttpStatus;
@@ -31,7 +31,7 @@ public class AnalyticServiceImpl implements AnalyticService {
 	public static final Logger logger = LoggerFactory.getLogger(AnalyticServiceImpl.class);
 	
 	@Autowired
-	private ESDataService esDataService;
+	private EsDataService esDataService;
 	
 	@Autowired
 	private IEXDataService iexDataService;
@@ -95,7 +95,10 @@ public class AnalyticServiceImpl implements AnalyticService {
 			getLatestBollingerBand(latestData, symbol, startDate, latestData.getDate());
 			
 			String[] fieldNames = new String[] {"volume", "changePercent", "changeOverTime"};
-			response = esHadoopSparkService.AnomalyDetection(latestData, fieldNames);
+			response = esHadoopSparkService.anomalyDetection(latestData, fieldNames);
+		} else {
+			response.put("status", HttpStatus.OK);
+			response.put("message", "no need to update");
 		}
 
 		return response;

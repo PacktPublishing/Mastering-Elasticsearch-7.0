@@ -2,6 +2,7 @@ package com.example.esanalytics.spark.mllib;
 
 import org.apache.spark.ml.clustering.KMeansModel;
 import org.apache.spark.ml.feature.VectorAssembler;
+import org.apache.spark.ml.clustering.KMeans;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.slf4j.Logger;
@@ -10,7 +11,7 @@ import org.springframework.stereotype.Component;
 import com.example.esanalytics.service.impl.EsHadoopSparkServiceImpl;
 import java.io.IOException;
 import java.nio.file.Paths;
-import org.apache.spark.ml.clustering.KMeans;
+
 
 @Component
 public class AnomalyDetection {
@@ -50,8 +51,7 @@ public class AnomalyDetection {
 		boolean exists = Paths.get(kmeansModelPath).toFile().exists();
 		if (exists) {
 			model = KMeansModel.load(kmeansModelPath);
-			if (model != null)
-				prediction = model.transform(features).select("prediction");
+			prediction = model.transform(features).select("prediction");
 		} else {
 			logger.error("Kmeans model not found");
 		}

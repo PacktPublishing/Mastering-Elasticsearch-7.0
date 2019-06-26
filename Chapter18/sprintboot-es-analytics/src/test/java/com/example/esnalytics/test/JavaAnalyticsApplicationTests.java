@@ -1,4 +1,4 @@
-package com.example.client.lowLevelRestClient;
+package com.example.esnalytics.test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.MOCK, classes=com.example.esanalytics.EsAnalyticsApplication.class)
-public class JavaLowerLevelClientApplicationTests {
+public class JavaAnalyticsApplicationTests {
 
 	@Test
 	public void contextLoads() {

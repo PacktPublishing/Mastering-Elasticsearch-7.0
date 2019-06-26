@@ -33,7 +33,7 @@ public class EsHadoopSparkController {
 		@ApiImplicitParam(paramType = "query", name="fieldNames", type="array", required=true, allowMultiple = true),
 		@ApiImplicitParam(paramType = "query", name="numOfClass", type="int", required=true)
 	})
-	@RequestMapping(value="/anomaly_detection", method=RequestMethod.GET)
+	@RequestMapping(value="/anomaly_detection", method=RequestMethod.POST)
 	public ResponseEntity<Map<String, Object>> buildAnomalyDectionModel(
 			@RequestParam(value = "indexName") String indexName,
 			@RequestParam(value = "fieldNames") String[] fieldNames,

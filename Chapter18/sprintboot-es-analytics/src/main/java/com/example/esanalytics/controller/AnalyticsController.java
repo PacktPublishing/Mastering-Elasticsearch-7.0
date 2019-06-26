@@ -61,7 +61,7 @@ public class AnalyticsController {
 	@ApiOperation("Get Registered Symbols")
 	@ApiImplicitParams({
 	})
-	@RequestMapping(value="/get-register-symbols", method=RequestMethod.POST)
+	@RequestMapping(value="/get-register-symbols", method=RequestMethod.GET)
 	public ResponseEntity<Map<String, Object>> getRegisterSymbols() throws Exception {
 		Map<String,Object> response = (Map<String, Object>) service.getRegisterSymbols();
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
