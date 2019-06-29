@@ -4,7 +4,7 @@ filebeat.inputs:
     - /var/log/syslog
 
 output.logstash:
-  hosts: ["localhost:5044"]
+  hosts: ["logstash_filebeat:5044"]
 
 logging.level: debug
 

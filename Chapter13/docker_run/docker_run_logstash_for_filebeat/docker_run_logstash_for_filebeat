@@ -1,2 +1,0 @@
-#!/bin/bash
-docker run --group-add adm --net host --rm -it -v ~/book/chapter13/docker_run/pipeline_for_filebeat/:/usr/share/logstash/pipeline -e xpack.monitoring.enabled=false docker.elastic.co/logstash/logstash:7.0.0 
