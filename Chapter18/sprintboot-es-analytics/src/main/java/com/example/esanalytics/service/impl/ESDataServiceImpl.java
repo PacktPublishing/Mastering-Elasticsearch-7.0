@@ -140,7 +140,7 @@ public class EsDataServiceImpl implements EsDataService {
 			SearchRequest request = new SearchRequest(dataIndexName);
 			SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
 			RequestOptions options = RequestOptions.DEFAULT;
-			request.source(sourceBuilder.query(QueryBuilders.matchAllQuery()).sort("date", SortOrder.ASC).size(1));
+			request.source(sourceBuilder.query(QueryBuilders.termQuery("symbol", symbol)).sort("date", SortOrder.ASC).size(1));
 			response = restClient.search(request, options);
 			SearchHit[] hits = response.getHits().getHits();
 			if (hits.length == 1) {
@@ -385,6 +385,41 @@ public class EsDataServiceImpl implements EsDataService {
 			logger.error(e.getMessage());
 		}
 		return registerFunds;
+	}
+	
+	@Override
+	public RegisterFund getRegisterFund(String symbol) {
+		GetIndexRequest getIndexRequest = new GetIndexRequest(registerIndexName);
+		boolean exists;
+		RegisterFund registerFund=null;
+		SearchResponse response;
+		SearchRequest request = new SearchRequest(registerIndexName);
+		SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
+		RequestOptions options = RequestOptions.DEFAULT;
+		request.source(sourceBuilder.query(QueryBuilders.termQuery("symbol", symbol)));
+		try {
+			exists = indexClient.exists(getIndexRequest, RequestOptions.DEFAULT);
+			if (!exists) {
+				logger.error(String.format("index (%s) not exist", registerIndexName));
+				return null;
+			}
+			
+			response = restClient.search(request, options);
+			if (response.getHits() != null) {
+				SearchHit[] hits = response.getHits().getHits();
+				if (hits.length == 1) {
+					for (SearchHit hit : hits) {
+						Map<String, Object> map = hit.getSourceAsMap();
+						registerFund = 
+								(new ObjectMapper()).convertValue(map, RegisterFund.class);
+						registerFund.setId(hit.getId());
+					}
+				}
+			}
+		} catch (IOException e) {
+			logger.error(e.getMessage());
+		}
+		return registerFund;
 	}
 
 }

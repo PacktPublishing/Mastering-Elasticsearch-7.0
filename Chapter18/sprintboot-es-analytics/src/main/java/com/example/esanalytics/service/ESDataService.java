@@ -18,4 +18,5 @@ public interface EsDataService {
 	long deleteDoc(String dataIndexName, String symbol);
 	<T extends BaseData> boolean upsertData(String indexName, T data);
 	RegisterFund[] getRegisterFunds();
+	RegisterFund getRegisterFund(String symbol);
 }

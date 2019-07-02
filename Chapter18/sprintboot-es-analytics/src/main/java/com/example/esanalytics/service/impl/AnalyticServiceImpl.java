@@ -94,8 +94,10 @@ public class AnalyticServiceImpl implements AnalyticService {
 			String startDate = latestDataDatetime.minusMonths(1).toString(formatter);
 			getLatestBollingerBand(latestData, symbol, startDate, latestData.getDate());
 			
-			String[] fieldNames = new String[] {"volume", "changePercent", "changeOverTime"};
-			response = esHadoopSparkService.anomalyDetection(latestData, fieldNames);
+			RegisterFund registerFund = esDataService.getRegisterFund(symbol);
+			HistoryData[] historyData = new HistoryData[1];
+			historyData[0] = latestData;
+			response = esHadoopSparkService.anomalyDetection(historyData, registerFund.getFieldNames());
 		} else {
 			response.put("status", HttpStatus.OK);
 			response.put("message", "no need to update");
@@ -231,9 +233,9 @@ public class AnalyticServiceImpl implements AnalyticService {
 			for (RegisterFund fund : funds) {
 				if (fund.getSymbol().equals(symbol)) {
 					logger.info(String.format("Daily update fund (%s)", fund));
-					dailyUpdate(fund.getSymbol(), fund.getToken(), true);
-					matched = true;
+					response = dailyUpdate(fund.getSymbol(), fund.getToken(), true);
 					response.put("status", HttpStatus.OK);
+					matched = true;
 				}
 			}
 		} 

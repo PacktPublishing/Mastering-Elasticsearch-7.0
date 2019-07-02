@@ -79,10 +79,8 @@ public class EsHadoopSparkServiceImpl implements EsHadoopSparkService {
 	}
 
 	@Override
-	public Map<String, Object> anomalyDetection(HistoryData latestData, String[] fieldNames) {
-		Map<String, Object> returns;
-		HistoryData[] historyData = new HistoryData[1];
-		historyData[0] = latestData;
+	public Map<String, Object> anomalyDetection(HistoryData[] historyData, String[] fieldNames) {
+		Map<String, Object> returns=new HashMap<String, Object>();
 		Map<String, Dataset<Row>> dataSetMap = esSparkIO.readValues(historyData, fieldNames);
 		Dataset<Row> dataSet = dataSetMap.get("dataSet");
 		Dataset<Row> dataSetAD = dataSetMap.get("dataSetAD");
@@ -98,6 +96,7 @@ public class EsHadoopSparkServiceImpl implements EsHadoopSparkService {
 	
 	
 	public Map<String, Object> updateES(Dataset<Row> prediction, Dataset<Row> dataSet, HistoryData[] historyData) {
+		Map<String, Object> returns=new HashMap<String, Object>();
 		String predictionString = prediction.collectAsList().toString();
 		Dataset<Row> data_id = dataSet.selectExpr("id", "hlc", "tDStDev", "tDMA", "bbl", "bbu");
 		Dataset<Row> data_row_index = data_id.withColumn("row_index", functions.monotonically_increasing_id());
@@ -105,7 +104,6 @@ public class EsHadoopSparkServiceImpl implements EsHadoopSparkService {
 		Dataset<Row> update = data_row_index.join(prediction_row_index, "row_index").drop("row_index");
 		update.write().format("org.elasticsearch.spark.sql").option("es.mapping.id", "id").option("es.mapping.exclude", "id")
 		.option("es.write.operation", "update").mode("append").save(indexName);
-		Map<String, Object> returns = new HashMap<String, Object>();
 		String statistics = dataSet.selectExpr("date", "hlc", "tdStDev", "tDMA", "bbl", "bbu").showString(historyData.length, 0, false);
 		returns.put("statistics", statistics);
 		returns.put("prediction", predictionString);
