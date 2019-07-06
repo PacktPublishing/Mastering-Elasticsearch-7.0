@@ -8,42 +8,36 @@
         		"cf_etf":"dividend"
         	}
         },
-        "cf_etf": { 
-          "properties": {
-        	"symbol": {"type": "keyword"},
-        	"fund_name": {"type": "completion"},
-        	"rating": {"type": "byte"},
-        	"morningstar_category": {"type": "keyword"},
-        	"category": {"type": "keyword"},
-        	"family": {"type": "keyword"},
-        	"market_cap": {"type": "keyword"},
-        	"description": {
-        		"type": "text", 
-        		"fields":{
-        			"raw": {
-        				"type":"keyword"
-        			 }
-        		},
-        		"analyzer":"description_analyzer",
-        		"search_analyzer":"description_analyzer"
-        	},
-        	"exchange": {"type": "keyword"}
-          }
-        },        
-        "dividend": {
-          "properties": {
-            "amount": { "type": "float" },
-            "declaredDate": { "type": "date" },
-            "exDate": { "type": "date" },
-            "flag": { "type": "text", 
+        "symbol": {"type": "keyword"},
+        "fund_name": {"type": "completion"},
+        "rating": {"type": "byte"},
+        "morningstar_category": {"type": "keyword"},
+        "category": {"type": "keyword"},
+        "family": {"type": "keyword"},
+        "market_cap": {"type": "keyword"},
+        "description": {
+           "type": "text", 
+            "fields":{
+        	"raw": {
+        		"type":"keyword"
+        	}
+        },
+        "analyzer":"description_analyzer",
+        "search_analyzer":"description_analyzer"
+        },
+        "exchange": {"type": "keyword"},
+        "amount": { "type": "float" },
+        "declaredDate": { "type": "date" },
+        "exDate": { "type": "date" },
+        "flag": { "type": "text", 
                 "fields": { 
                   "keyword": {
                     "type": "keyword",
                      "ignore_above": 256
                   } 
                 } 
-             }, 
-             "indicated": {
+        }, 
+        "indicated": {
                 "type": "text",
                 "fields": {
                   "keyword": {
@@ -51,28 +45,26 @@
                     "ignore_above": 256
                   }  
                 }  
-             },  
-             "paymentDate": { "type": "date" },
-             "qualified": { "type": "text",
+        },  
+        "paymentDate": { "type": "date" },
+        "qualified": { "type": "text",
                 "fields": {
                   "keyword": {
                     "type": "keyword",
                     "ignore_above": 256
                   }
                 }       
-             },                 
-             "recordDate": { "type": "date" },
-               "type": { "type": "text", 
+        },                 
+        "recordDate": { "type": "date" },
+        "type": { "type": "text", 
                  "fields": {            
                    "keyword": {
                      "type": "keyword",
                      "ignore_above": 256
                    }    
                  }              
-              }
-            }           
-       } 
-    }
+       }
+     }
    },
 	"settings": {
 		"index": {
