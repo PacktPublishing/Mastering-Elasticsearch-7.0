@@ -1,0 +1,1673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Chapter5</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1671.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 17.0px; font: 14.0px Times; color: #5a5a5a; -webkit-text-stroke: #5a5a5a}
+    p.p2 {margin: 0.0px 0.0px 10.0px 0.0px; line-height: 41.0px; font: 36.0px Times; color: #171717; -webkit-text-stroke: #171717}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #171717; -webkit-text-stroke: #171717}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #5a5a5a; -webkit-text-stroke: #5a5a5a}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 18.0px Times; color: #171717; -webkit-text-stroke: #171717}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #171717; -webkit-text-stroke: #171717; background-color: #f4f4f4}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #171717; -webkit-text-stroke: #171717}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #e1e1e1; -webkit-text-stroke: #e1e1e1}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #3c3f40; -webkit-text-stroke: #3c3f40; background-color: #1d1d1d; background-color: rgba(29, 29, 29, 0.047)}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #247f0c; -webkit-text-stroke: #247f0c; background-color: #1d1d1d; background-color: rgba(29, 29, 29, 0.047)}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #c5c5c5; -webkit-text-stroke: #c5c5c5}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #c5c5c5; -webkit-text-stroke: #c5c5c5; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.098)}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 12.0px Monaco; color: #f4f4eb; -webkit-text-stroke: #f4f4eb; background-color: #1a1a1a; min-height: 16.0px}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 12.0px Monaco; color: #f4f4eb; -webkit-text-stroke: #f4f4eb; background-color: #1a1a1a}
+    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #5a5a5a; -webkit-text-stroke: #5a5a5a; background-color: #1d1d1d; background-color: rgba(29, 29, 29, 0.047)}
+    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #5a5a5a; -webkit-text-stroke: #5a5a5a; background-color: #1d1d1d; background-color: rgba(29, 29, 29, 0.047); min-height: 12.0px}
+    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
+    p.p18 {margin: 0.0px 10.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #171717; -webkit-text-stroke: #171717; background-color: #e4e4e4}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 16.0px Times; font-kerning: none; color: #eb8317; -webkit-text-stroke: 0px #eb8317}
+    span.s3 {font-kerning: none; color: #5a5a5a; -webkit-text-stroke: 0px #5a5a5a}
+    span.s4 {font-kerning: none; color: #3c3f40; -webkit-text-stroke: 0px #3c3f40}
+    span.s5 {font: 12.0px Ayuthaya; font-kerning: none}
+    span.s6 {font: 12.0px 'Lucida Grande'; font-kerning: none}
+    span.s7 {font: 16.0px Times; font-kerning: none; color: #2e62d2; -webkit-text-stroke: 0px #2e62d2}
+    span.s8 {font: 16.0px Times; font-kerning: none; color: #2ea024; -webkit-text-stroke: 0px #2ea024}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p2"><span class="s1">Chapter5</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> standard_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p9"><span class="s1">{</span></p>
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s1">"text"</span><span class="s4">:</span><span class="s3"> </span><span class="s1">"&lt;body&gt;You'll love Elasticsearch 7.0&lt;/body&gt;"</span><span class="s4">,</span></p>
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s1">"tokenizer"</span><span class="s4">:</span><span class="s3"> </span><span class="s1">"standard"</span></p>
+<p class="p9"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">standard_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"&lt;body&gt;You'll love Elasticsearch 7.0&lt;/body&gt;\", \"tokenizer\": \"standard\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> standard_tokenizer_lowercase_token_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "&lt;body&gt;You'll love Elasticsearch 7.0&lt;/body&gt;",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": ["lowercase"]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">standard_tokenizer_lowercase_token_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"&lt;body&gt;You'll love Elasticsearch 7.0&lt;/body&gt;\", \"tokenizer\": \"standard\", \"filter\": [\"lowercase\"] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> html_strip_map_filter_standard_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "&lt;body&gt;You'll love Elasticsearch 7.0&lt;/body&gt;",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"char_filter": ["html_strip", {"type":"mapping", "mappings": ["You'll =&gt; You will"]}],</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": ["lowercase"]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">html_strip_map_filter_standard_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"&lt;body&gt;You'll love Elasticsearch 7.0&lt;/body&gt;\", \"char_filter\": [\"html_strip\", {\"type\":\"mapping\", \"mappings\": [\"You'll =&gt; You will\"]}], \"tokenizer\": \"standard\", \"filter\": [\"lowercase\"] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> html_strip_standard_tokenizer_lowercase<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "&lt;body&gt;You'll love Elasticsearch 7.0&lt;/body&gt;",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"char_filter": ["html_strip"],</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": ["lowercase"]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">html_strip_standard_tokenizer_lowercase</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"&lt;body&gt;You'll love Elasticsearch 7.0&lt;/body&gt;\", \"char_filter\": [\"html_strip\"], \"tokenizer\": \"standard\", \"filter\": [\"lowercase\"] }""</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> pattern_replace_char_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "&lt;body&gt;You'll love Elasticsearch 7.0&lt;/body&gt;",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"char_filter": ["html_strip", {"type": "mapping", "mappings": ["You'll=&gt;You will"]},<span class="Apple-converted-space"> </span></span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>{"type":"pattern_replace", "pattern":"(\\d+).(\\d+)", "replacement":"v$1"}],</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": ["lowercase"]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">pattern_replace_char_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"&lt;body&gt;You'll love Elasticsearch 7.0&lt;/body&gt;\", \"char_filter\": [\"html_strip\", {\"type\": \"mapping\", \"mappings\": [\"You'll=&gt;You will\"]}, {\"type\":\"pattern_replace\", \"pattern\":\"(\\\\d+).(\\\\d+)\", \"replacement\":\"v$1\"}], \"tokenizer\": \"standard\", \"filter\": [\"lowercase\"] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> standard_tokenizer2<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "POST https://api.iextrading.com/1.0/stock/acwf/company /usr/local",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">standard_tokenizer2</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"POST https://api.iextrading.com/1.0/stock/acwf/company /usr/local\", \"tokenizer\": \"standard\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> letter_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "POST https://api.iextrading.com/1.0/stock/acwf/company /user/local",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "whitespace"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">letter_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"POST https://api.iextrading.com/1.0/stock/acwf/company /user/local\", \"tokenizer\": \"whitespace\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> lowercase_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "POST https://api.iextrading.com/1.0/stock/acwf/company /usr/local",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "lowercase"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">lowercase_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"POST https://api.iextrading.com/1.0/stock/acwf/company /usr/local\", \"tokenizer\": \"lowercase\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> whitespace_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "POST https://api.iextrading.com/1.0/stock/acwf/company /usr/local",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "whitespace"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">whitespace_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"POST https://api.iextrading.com/1.0/stock/acwf/company /usr/local\", \"tokenizer\": \"whitespace\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> uax_url_email_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "POST https://api.iextrading.com/1.0/stock/acwf/company /usr/local",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "uax_url_email"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">uax_url_email_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"POST https://api.iextrading.com/1.0/stock/acwf/company /usr/local\", \"tokenizer\": \"uax_url_email\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> classic-tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "POST https://api.iextrading.com/1.0/stock/acwf/company 192.168.0.1 100-123",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "classic"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">classic-tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"POST https://api.iextrading.com/1.0/stock/acwf/company 192.168.0.1 100-123\", \"tokenizer\": \"classic\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> thai_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "</span><span class="s5">คุณจะรัก</span><span class="s1"> Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "thai"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">thai_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"</span><span class="s5">คุณจะรัก</span><span class="s1"> Elasticsearch 7.0\", \"tokenizer\": \"thai\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> ngram_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": {"type":"ngram", "min_gram":2, "max_gram":2, "token_chars": ["punctuation", "digit"]}</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">ngram_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elasticsearch 7.0\", \"tokenizer\": {\"type\":\"ngram\", \"min_gram\":2, \"max_gram\":2, \"token_chars\": [\"punctuation\", \"digit\"]} }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> edge_ngram_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": {"type":"edge_ngram", "min_gram":2, "max_gram":2, "token_chars": ["punctuation", "digit"]}</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">edge_ngram_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elasticsearch 7.0\", \"tokenizer\": {\"type\":\"edge_ngram\", \"min_gram\":2, \"max_gram\":2, \"token_chars\": [\"punctuation\", \"digit\"]} }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> keyword_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "keyword"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">keyword_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elasticsearch 7.0\", \"tokenizer\": \"keyword\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> pattern_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "pattern"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">pattern_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elasticsearch 7.0\", \"tokenizer\": \"pattern\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> char_group_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": {"type":"char_group", "tokenize_on_chars": ["whitespace", "punctuation"]}</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">char_group_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elasticsearch 7.0\", \"tokenizer\": {\"type\":\"char_group\", \"tokenize_on_chars\": [\"whitespace\", \"punctuation\"]} }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> simple_pattern_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": {"type":"simple_pattern", "pattern": "[a-zA-Z]*"}</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">simple_pattern_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elasticsearch 7.0\", \"tokenizer\": {\"type\":\"simple_pattern\", \"pattern\": \"[a-zA-Z]*\"} }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> simple_pattern_split_tokenizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": {"type":"simple_pattern_split", "pattern": "[a-zA-Z.]*"}</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">simple_pattern_split_tokenizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elasticsearch 7.0\", \"tokenizer\": {\"type\":\"simple_pattern_split\", \"pattern\": \"[a-zA-Z.]*\"} }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> asciifolding_token_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Ÿőű'ľľ ľő</span><span class="s6">ν</span><span class="s1">ė Ȅľȁśťĩćŝėȁŕćĥ 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"asciifolding", "preserve_original":true}]</span></p>
+<p class="p16"><span class="s1"><span class="Apple-tab-span">	</span></span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">asciifolding_token_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Ÿőű'ľľ ľő</span><span class="s6">ν</span><span class="s1">ė Ȅľȁśťĩćŝėȁŕćĥ 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"asciifolding\", \"preserve_original\":true}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> ngram_token_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"ngram", "min_gram":10, "max_gram":10}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">ngram_token_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elasticsearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"ngram\", \"min_gram\":10, \"max_gram\":10}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> edge_ngram_token_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "You'll love Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"edge_ngram", "min_gram":10, "max_gram":10}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">edge_ngram_token_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"You'll love Elasticsearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"edge_ngram\", \"min_gram\":10, \"max_gram\":10}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> lowercase_token_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "You'll love Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": ["lowercase"]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">lowercase_token_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"You'll love Elasticsearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [\"lowercase\"] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> fingerprint_token_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "You'll love Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": ["fingerprint"]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">fingerprint_token_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"You'll love Elasticsearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [\"fingerprint\"] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> keep_token_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "You'll love Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type": "keep", "keep_words":["Elasticsearch", "7.0"]}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">keep_token_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"You'll love Elasticsearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\": \"keep\", \"keep_words\":[\"Elasticsearch\", \"7.0\"]}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> keep_types_token_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "You'll love Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type": "keep_types", "types":["&lt;NUM&gt;"]}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">keep_types_token_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"You'll love Elasticsearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\": \"keep_types\", \"types\":[\"&lt;NUM&gt;\"]}] }"<span class="Apple-converted-space"> </span></span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> stemmer_token_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "love loves loved loving",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type": "stemmer", "name":"english"}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">stemmer_token_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"love loves loved loving\", \"tokenizer\": \"standard\", \"filter\": [{\"type\": \"stemmer\", \"name\":\"english\"}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> stop_token_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "A an The and Elasticsearch",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type": "stop", "stopwords":["_english_"], "ignore_case":true}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">stop_token_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"A an The and Elasticsearch\", \"tokenizer\": \"standard\", \"filter\": [{\"type\": \"stop\", \"stopwords\":[\"_english_\"], \"ignore_case\":true}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> unique_token_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "love loves loved loving",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type": "stemmer", "name":"english"}, "unique"]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">unique_token_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"love loves loved loving\", \"tokenizer\": \"standard\", \"filter\": [{\"type\": \"stemmer\", \"name\":\"english\"}, \"unique\"] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> predicate_token_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "You'll love Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type": "predicate_token_filter", "script":{"source":"token.getType()=='&lt;NUM&gt;'"}}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">predicate_token_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"You'll love Elasticsearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\": \"predicate_token_filter\", \"script\":{\"source\":\"token.getType()=='&lt;NUM&gt;'\"}}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> conditional_token_filter<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "You'll love Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type": "condition", "script":{"source":"token.getType()=='&lt;ALPHANUM&gt;'"}, "filter":["reverse"]}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">conditional_token_filter</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"You'll love Elasticsearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\": \"condition\", \"script\":{\"source\":\"token.getType()=='&lt;ALPHANUM&gt;'\"}, \"filter\":[\"reverse\"]}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_generate_word_parts_true<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "ElasticSearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "generate_word_parts":true}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_generate_word_parts_true</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"ElasticSearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"generate_word_parts\":true}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_generate_word_parts_false<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "ElasticSearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "generate_word_parts":false}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_generate_word_parts_false</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"ElasticSearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"generate_word_parts\":false}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_generate_number_parts_true<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "ElasticSearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "generate_number_parts":true}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_generate_number_parts_true</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"ElasticSearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"generate_number_parts\":true}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_generate_number_parts_false<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "ElasticSearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "generate_number_parts":false}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_generate_number_parts_false</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"ElasticSearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"generate_number_parts\":false}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_catenate_words_true<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elastic_Search 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "catenate_words": true}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_catenate_words_true</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elastic_Search 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"catenate_words\": true}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_catenate_words_false<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elastic_Search 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "catenate_words": false}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_catenate_words_false</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elastic_Search 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"catenate_words\": false}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_catenate_numbers_true<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elastic_Search 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "catenate_numbers": true}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_catenate_numbers_true</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elastic_Search 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"catenate_numbers\": true}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_catenate_number_false<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elastic_Search 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "catenate_numbers": false}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_catenate_number_false</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elastic_Search 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"catenate_numbers\": false}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_catenate_all_true<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elastic_Search 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "catenate_all": true}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_catenate_all_true</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elastic_Search 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"catenate_all\": true}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_catenate_all_false<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elastic_Search 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "catenate_all": false}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_catenate_all_false</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elastic_Search 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"catenate_all\": false}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_split_on_case_change_true<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "ElasticSearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "split_on_case_change": true}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_split_on_case_change_true</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"ElasticSearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"split_on_case_change\": true}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_split_on_case_change_false<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "ElasticSearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "split_on_case_change": false}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_split_on_case_change_false</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"ElasticSearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"split_on_case_change\": false}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_preserve_original_true<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elastic_Search 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "preserve_original": true}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_preserve_original_true</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elastic_Search 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"preserve_original\": true}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_preserve_original_false<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "ElasticSearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "preserve_original": false}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_preserve_original_false</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"ElasticSearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"preserve_original\": false}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_split_on_numeric_true<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "SN12X",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "split_on_numerics":true}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_split_on_numeric_true</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"SN12X\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"split_on_numerics\":true}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_split_on_numeric_false<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "ElasticSearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "split_on_numeric": false}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_split_on_numeric_false</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"ElasticSearch 7.0\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"split_on_numeric\": false}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_stem_english_possesive_true<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elasticsearch's analyer",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "stem_english_possessive":true}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_stem_english_possesive_true</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elasticsearch's analyer\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"stem_english_possessive\":true}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> word_delimiter_token_filter_stem_english_possesive_false<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "Elasticsearch's analyzer",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"tokenizer": "standard",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"filter": [{"type":"word_delimiter", "stem_english_possessive":false}]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">word_delimiter_token_filter_stem_english_possesive_false</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"Elasticsearch's analyzer\", \"tokenizer\": \"standard\", \"filter\": [{\"type\":\"word_delimiter\", \"stem_english_possessive\":false}] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> standard_analyzer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "In Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"analyzer": "standard"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">standard_analyzer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"In Elasticsearch 7.0\", \"analyzer\": \"standard\" }"<span class="Apple-converted-space"> </span></span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> simple_analyzer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "In Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"analyzer": "simple"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">simple_analyzer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"In Elasticsearch 7.0\", \"analyzer\": \"simple\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> whitespace_analyzer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "In Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"analyzer": "whitespace"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">whitespace_analyzer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"In Elasticsearch 7.0\", \"analyzer\": \"whitespace\" }"<span class="Apple-converted-space"> </span></span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> stop_analyzer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "You'll love Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"analyzer": "whitespace"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">stop_analyzer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"You'll love Elasticsearch 7.0\", \"analyzer\": \"whitespace\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> keyword_analyzer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "In Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"analyzer": "keyword"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">keyword_analyzer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"In Elasticsearch 7.0\", \"analyzer\": \"keyword\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> pattern_analyzer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "In Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"analyzer": "pattern"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">pattern_analyzer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"In Elasticsearch 7.0\", \"analyzer\": \"pattern\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> fingerprint_analyzer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "In Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"analyzer": "pattern"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">fingerprint_analyzer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"In Elasticsearch 7.0\", \"analyzer\": \"pattern\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> english_analyzer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text": "In Elasticsearch 7.0",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"analyzer": "english"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">english_analyzer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_analyze" --header "Content-Type: application/json" --data "{ \"text\": \"In Elasticsearch 7.0\", \"analyzer\": \"english\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s7">PUT</span><span class="s1"> define_custom_analyzer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"mappings": {</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"dynamic": false,</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"properties": {</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"symbol": {"type": "keyword"},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"fund_name": {"type": "text"},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"rating": {"type": "byte"},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"morningstar_category": {"type": "keyword"},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"category": {"type": "keyword"},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"family": {"type": "keyword"},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"market_cap": {"type": "keyword"},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"description": {"type": "text", "fields": {"raw": {"type":"keyword"}}, "analyzer":"description_analyzer", "search_analyzer":"description_analyzer"},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"exchange": {"type": "keyword"}</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"settings": {</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"analysis": {</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"analyzer" : {</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"description_analyzer": {</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"type": "custom",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"tokenizer": "description_tokenizer",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"filter": ["lowercase", "description_pattern_replace_filter", "description_stemmer_filter", "description_stop_filter", "description_length_filter", "unique"]</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"tokenizer": {</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"description_tokenizer" : {"type":"char_group", "tokenize_on_chars": ["whitespace", "digit", "symbol", "\\n", ",", ":", "!", "?", ";", ",", "_", "{", "[", "}", "]", "(", ")", "\\", "\/","\""]}</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"filter": {</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"description_pattern_replace_filter": {"type":"pattern_replace", "pattern": "(\\w{2,})\\.", "replacement":"$1"},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"description_stemmer_filter" : {"type":"stemmer", "name":"light_english"},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"description_stop_filter": {"type":"stop", "stopwords_path":"stopwords"},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"description_length_filter": {"type":"length", "min":2}</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">define_custom_analyzer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request PUT "http://localhost:9200/cf_etf" --header "Content-Type: application/json" --data $'{ \"mappings\": { \"dynamic\": false, \"properties\": { \"symbol\": {\"type\": \"keyword\"}, \"fund_name\": {\"type\": \"text\"}, \"rating\": {\"type\": \"byte\"}, \"morningstar_category\": {\"type\": \"keyword\"}, \"category\": {\"type\": \"keyword\"}, \"family\": {\"type\": \"keyword\"}, \"market_cap\": {\"type\": \"keyword\"}, \"description\": {\"type\": \"text\", \"fields\": {\"raw\": {\"type\":\"keyword\"}}, \"analyzer\":\"description_analyzer\", \"search_analyzer\":\"description_analyzer\"}, \"exchange\": {\"type\": \"keyword\"} } }, \"settings\": { \"analysis\": { \"analyzer\" : { \"description_analyzer\": { \"type\": \"custom\", \"tokenizer\": \"description_tokenizer\", \"filter\": [\"lowercase\", \"description_pattern_replace_filter\", \"description_stemmer_filter\", \"description_stop_filter\", \"description_length_filter\", \"unique\"] } }, \"tokenizer\": { \"description_tokenizer\" : {\"type\":\"char_group\", \"tokenize_on_chars\": [\"whitespace\", \"digit\", \"symbol\", \"\\\\", \",\", \":\", \"!\", \"?\", \";\", \",\", \"_\", \"{\", \"[\", \"}\", \"]\", \"(\", \")\", \"\\\\\", \"\\/\",\"\\\"\"]} }, \"filter\": { \"description_pattern_replace_filter\": {\"type\":\"pattern_replace\", \"pattern\": \"(\\\\w{2,})\\\\.\", \"replacement\":\"$1\"}, \"description_stemmer_filter\" : {\"type\":\"stemmer\", \"name\":\"light_english\"}, \"description_stop_filter\": {\"type\":\"stop\", \"stopwords_path\":\"stopwords\"}, \"description_length_filter\": {\"type\":\"length\", \"min\":2} } } } }'</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s8">GET</span><span class="s1"> define_custom_analyzer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">define_custom_analyzer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request GET "http://localhost:9200/cf_etf"<span class="Apple-converted-space">  </span>--header "Content-Type: application/json"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> test_custom_analyzer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text":"The investment seeks to track the price and yield performance, before fees and expenses, of the Bloomberg Barclays U.S. Aggregate Enhanced Yield Index (the \\\"index\\\").\\n The index is designed to broadly capture the U.S. investment grade, fixed income securities market while seeking to enhance yield within desired risk parameters and constraints. The fund is non-diversified.",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"analyzer": "description_analyzer"<span class="Apple-converted-space"> </span></span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">test_custom_analyzer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/cf_etf/_analyze" --header "Content-Type: application/json" --data "{ \"text\":\"The investment seeks to track the price and yield performance, before fees and expenses, of the Bloomberg Barclays U.S. Aggregate Enhanced Yield Index (the \\\\\\\"index\\\\\\\").\\\ The index is designed to broadly capture the U.S. investment grade, fixed income securities market while seeking to enhance yield within desired risk parameters and constraints. The fund is non-diversified.\", \"analyzer\": \"description_analyzer\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s7">PUT</span><span class="s1"> define_lowercase_normailizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf_toy</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"settings": {</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"analysis": {</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"normalizer" : {</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"lowercase_normalizer": {</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"type": "custom",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"filter": ["lowercase"]</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">define_lowercase_normailizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request PUT "http://localhost:9200/cf_etf_toy" --header "Content-Type: application/json" --data "{ \"settings\": { \"analysis\": { \"normalizer\" : { \"lowercase_normalizer\": { \"type\": \"custom\", \"filter\": [\"lowercase\"] } } } } }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">POST</span><span class="s1"> test_lowercase_normailizer<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf/_analyze</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"text":"The investment seeks to track the price and yield performance, before fees and expenses, of the Bloomberg Barclays U.S. Aggregate Enhanced Yield Index (the \\\"index\\\").\\n The index is designed to broadly capture the U.S. investment grade, fixed income securities market while seeking to enhance yield within desired risk parameters and constraints. The fund is non-diversified.",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"analyzer": "description_analyzer"<span class="Apple-converted-space"> </span></span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">test_lowercase_normailizer</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/cf_etf/_analyze" --header "Content-Type: application/json" --data "{ \"text\":\"The investment seeks to track the price and yield performance, before fees and expenses, of the Bloomberg Barclays U.S. Aggregate Enhanced Yield Index (the \\\\\\\"index\\\\\\\").\\\ The index is designed to broadly capture the U.S. investment grade, fixed income securities market while seeking to enhance yield within desired risk parameters and constraints. The fund is non-diversified.\", \"analyzer\": \"description_analyzer\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p17"><span class="s1"><br>
+</span></p>
+<p class="p18"><span class="s1">CHAPTER5</span></p>
+</body>
+</html>

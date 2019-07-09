@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>chapter3</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1671.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
+    p.p2 {margin: 0.0px 0.0px 10.0px 0.0px; line-height: 41.0px; font: 36.0px Times; color: #171717; -webkit-text-stroke: #171717}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #171717; -webkit-text-stroke: #171717}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #5a5a5a; -webkit-text-stroke: #5a5a5a}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 18.0px Times; color: #171717; -webkit-text-stroke: #171717}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #171717; -webkit-text-stroke: #171717; background-color: #f4f4f4}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #171717; -webkit-text-stroke: #171717}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #e1e1e1; -webkit-text-stroke: #e1e1e1}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #3c3f40; -webkit-text-stroke: #3c3f40; background-color: #1d1d1d; background-color: rgba(29, 29, 29, 0.047)}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #247f0c; -webkit-text-stroke: #247f0c; background-color: #1d1d1d; background-color: rgba(29, 29, 29, 0.047)}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #c5c5c5; -webkit-text-stroke: #c5c5c5}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #c5c5c5; -webkit-text-stroke: #c5c5c5; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.098)}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 12.0px Monaco; color: #f4f4eb; -webkit-text-stroke: #f4f4eb; background-color: #1a1a1a; min-height: 16.0px}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 12.0px Monaco; color: #f4f4eb; -webkit-text-stroke: #f4f4eb; background-color: #1a1a1a}
+    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #5a5a5a; -webkit-text-stroke: #5a5a5a; background-color: #1d1d1d; background-color: rgba(29, 29, 29, 0.047)}
+    p.p16 {margin: 0.0px 10.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #171717; -webkit-text-stroke: #171717; background-color: #e4e4e4}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 16.0px Times; font-kerning: none; color: #2e62d2; -webkit-text-stroke: 0px #2e62d2}
+    span.s3 {font-kerning: none; color: #5a5a5a; -webkit-text-stroke: 0px #5a5a5a}
+    span.s4 {font-kerning: none; color: #3c3f40; -webkit-text-stroke: 0px #3c3f40}
+    span.s5 {font-kerning: none; color: #ab001a; -webkit-text-stroke: 0px #ab001a}
+    span.s6 {font: 16.0px Times; font-kerning: none; color: #eb8317; -webkit-text-stroke: 0px #eb8317}
+    span.s7 {font: 16.0px Times; font-kerning: none; color: #2ea024; -webkit-text-stroke: 0px #2ea024}
+    span.s8 {font: 16.0px Times; font-kerning: none; color: #dd1b2b; -webkit-text-stroke: 0px #dd1b2b}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p2"><span class="s1">chapter3</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s2">PUT</span><span class="s1"> index_cf_etf_doc_acwf<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf/_doc/1</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p9"><span class="s1">{</span></p>
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s1">"symbol"</span><span class="s4">:</span><span class="s3"> </span><span class="s1">"ACWF"</span><span class="s4">,</span></p>
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s1">"fund_name"</span><span class="s4">:</span><span class="s3"> </span><span class="s1">"iShares Edge MSCI Multifactor Global ETF"</span><span class="s4">,</span></p>
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s1">"rating"</span><span class="s4">:</span><span class="s3"> </span><span class="s5">3</span><span class="s4">,</span></p>
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s1">"morningstar_category"</span><span class="s4">:</span><span class="s3"> </span><span class="s1">"World Large Stock"</span><span class="s4">,</span></p>
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s1">"category"</span><span class="s4">:</span><span class="s3"> </span><span class="s1">"Equity"</span><span class="s4">,</span></p>
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s1">"family"</span><span class="s4">:</span><span class="s3"> </span><span class="s1">"iShares"</span><span class="s4">,</span></p>
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s1">"market_cap"</span><span class="s4">:</span><span class="s3"> </span><span class="s1">"large"</span><span class="s4">,</span></p>
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s1">"description"</span><span class="s4">:</span><span class="s3"> </span><span class="s1">"The investment seeks to track the investment results of the MSCI ACWI Diversified Multiple-Factor Index.\\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index is designed to contain equity securities from the MSCI ACWI Index (the \\\"parent index\\\") that have high exposure to four investment style factors: value, quality, momentum and low size, while maintaining a level of risk similar to that of the parent index."</span><span class="s4">,</span></p>
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s1">"exchange"</span><span class="s4">:</span><span class="s3"> </span><span class="s1">"NYSE Arca"</span></p>
+<p class="p9"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">index_cf_etf_doc_acwf</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request PUT "http://localhost:9200/cf_etf/_doc/1" --header "Content-Type: application/json"<span class="Apple-converted-space">  </span>--data "{ \"symbol\": \"ACWF\", \"fund_name\": \"iShares Edge MSCI Multifactor Global ETF\", \"rating\": 3, \"morningstar_category\": \"World Large Stock\", \"category\": \"Equity\", \"family\": \"iShares\", \"market_cap\": \"large\", \"description\": \"The investment seeks to track the investment results of the MSCI ACWI Diversified Multiple-Factor Index.\\\ The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index is designed to contain equity securities from the MSCI ACWI Index (the \\\\\\\"parent index\\\\\\\") that have high exposure to four investment style factors: value, quality, momentum and low size, while maintaining a level of risk similar to that of the parent index.\", \"exchange\": \"NYSE Arca\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s6">POST</span><span class="s1"> index_cf_etf_doc_acwi<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf/_doc</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"symbol": "ACWI",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"fund_name": "iShares MSCI ACWI ETF",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"rating": 3,</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"morningstar_category": "World Large Stock",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"category": "International",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"family": "iShares",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"market_cap": "large",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"description": "The investment seeks to track the investment results of the MSCI ACWI composed of large- and mid-capitalization developed and emerging market equities.\\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is a free float-adjusted market capitalization index designed to measure the combined equity market performance of developed and emerging markets countries.",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"exchange": "NASDAQ Global Market"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">index_cf_etf_doc_acwi</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/cf_etf/_doc" --header "Content-Type: application/json" --data "{ \"symbol\": \"ACWI\", \"fund_name\": \"iShares MSCI ACWI ETF\", \"rating\": 3, \"morningstar_category\": \"World Large Stock\", \"category\": \"International\", \"family\": \"iShares\", \"market_cap\": \"large\", \"description\": \"The investment seeks to track the investment results of the MSCI ACWI composed of large- and mid-capitalization developed and emerging market equities.\\\ The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is a free float-adjusted market capitalization index designed to measure the combined equity market performance of developed and emerging markets countries.\", \"exchange\": \"NASDAQ Global Market\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s7">GET</span><span class="s1"> get_cf_etf_doc_acwi<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf/_doc/1</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">get_cf_etf_doc_acwi</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request GET "http://localhost:9200/cf_etf/_doc/1" --header "Content-Type: application/json"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s7">GET</span><span class="s1"> get_cf_etf_parital_doc_acwf<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf/_doc/1?_source=symbol,rating,category</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">PARAMS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">_source</span></p>
+<p class="p7"><span class="s1">symbol,rating,category</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">get_cf_etf_parital_doc_acwf</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request GET "http://localhost:9200/cf_etf/_doc/1?_source=symbol,rating,category" --header "Content-Type: application/json"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s6">POST</span><span class="s1"> update_cf_etf_doc_acwf<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf/_doc/1/_update</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"doc": {</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"market_cap": "mid"</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">update_cf_etf_doc_acwf</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/cf_etf/_doc/1/_update" --header "Content-Type: application/json" --data "{ \"doc\": { \"market_cap\": \"mid\" } }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s6">POST</span><span class="s1"> update_cf_etf_doc_acwf_remove_market_cap_field<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf/_doc/1/_update</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"script": "ctx._source.remove('market_cap')"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">update_cf_etf_doc_acwf_remove_market_cap_field</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/cf_etf/_doc/1/_update" --header "Content-Type: application/json" --data "{ \"script\": \"ctx._source.remove('market_cap')\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s8">DEL</span><span class="s1"> delete_cf_etf_doc_acwf_by_id<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf/_doc/1</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"symbol": "ACWF",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"fund_name": "iShares Edge MSCI Multifactor Global ETF",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"rating": 3,</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"morningstar_category": "World Large Stock",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"category": "Equity",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"family": "iShares",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"market_cap": "large",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"description": "The investment seeks to track the investment results of the MSCI ACWI Diversified Multiple-Factor Index.\\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index is designed to contain equity securities from the MSCI ACWI Index (the \\\"parent index\\\") that have high exposure to four investment style factors: value, quality, momentum and low size, while maintaining a level of risk similar to that of the parent index.",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"exchange": "NYSE Arca"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">delete_cf_etf_doc_acwf_by_id</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request DELETE "http://localhost:9200/cf_etf/_doc/1" --header "Content-Type: application/json" --data "{ \"symbol\": \"ACWF\", \"fund_name\": \"iShares Edge MSCI Multifactor Global ETF\", \"rating\": 3, \"morningstar_category\": \"World Large Stock\", \"category\": \"Equity\", \"family\": \"iShares\", \"market_cap\": \"large\", \"description\": \"The investment seeks to track the investment results of the MSCI ACWI Diversified Multiple-Factor Index.\\\ The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index is designed to contain equity securities from the MSCI ACWI Index (the \\\\\\\"parent index\\\\\\\") that have high exposure to four investment style factors: value, quality, momentum and low size, while maintaining a level of risk similar to that of the parent index.\", \"exchange\": \"NYSE Arca\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">PUT</span><span class="s1"> reindex_cf_etf_doc_acwf<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf/_doc/1</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"symbol": "ACWF",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"fund_name": "iShares Edge MSCI Multifactor Global ETF",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"rating": 3,</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"morningstar_category": "World Large Stock",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"category": "Equity",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"family": "iShares",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"market_cap": "large",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"description": "The investment seeks to track the investment results of the MSCI ACWI Diversified Multiple-Factor Index.\\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index is designed to contain equity securities from the MSCI ACWI Index (the \\\"parent index\\\") that have high exposure to four investment style factors: value, quality, momentum and low size, while maintaining a level of risk similar to that of the parent index.",</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"exchange": "NYSE Arca"</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">reindex_cf_etf_doc_acwf</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request PUT "http://localhost:9200/cf_etf/_doc/1" --header "Content-Type: application/json" --data "{ \"symbol\": \"ACWF\", \"fund_name\": \"iShares Edge MSCI Multifactor Global ETF\", \"rating\": 3, \"morningstar_category\": \"World Large Stock\", \"category\": \"Equity\", \"family\": \"iShares\", \"market_cap\": \"large\", \"description\": \"The investment seeks to track the investment results of the MSCI ACWI Diversified Multiple-Factor Index.\\\ The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index is designed to contain equity securities from the MSCI ACWI Index (the \\\\\\\"parent index\\\\\\\") that have high exposure to four investment style factors: value, quality, momentum and low size, while maintaining a level of risk similar to that of the parent index.\", \"exchange\": \"NYSE Arca\" }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s6">POST</span><span class="s1"> get_cf_etf_multiple_documents<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_mget</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"docs": [</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>{"_index": "cf_view", "_id":"1", "_source":["symbol", "category"]},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>{"_index": "cf_etf", "_id": "1", "_source":["symbol", "category"]}</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">get_cf_etf_multiple_documents</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_mget" --header "Content-Type: application/json" --data "{ \"docs\": [ {\"_index\": \"cf_view\", \"_id\":\"1\", \"_source\":[\"symbol\", \"category\"]}, {\"_index\": \"cf_etf\", \"_id\": \"1\", \"_source\":[\"symbol\", \"category\"]} ] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s6">POST</span><span class="s1"> get_cf_etf_multiple_documents_by_ids<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf/_mget</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"ids": ["1", "n01iLGkB_W0hQaVaF0iP"]</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">get_cf_etf_multiple_documents_by_ids</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/cf_etf/_mget" --header "Content-Type: application/json" --data "{ \"ids\": [\"1\", \"n01iLGkB_W0hQaVaF0iP\"] }"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s6">POST</span><span class="s1"> bulk_api<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_bulk</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{"delete": {"_index":"cf_etf", "_id":"1"}}</span></p>
+<p class="p15"><span class="s1">{"create": {"_index":"cf_etf", "_id":"1"}}</span></p>
+<p class="p15"><span class="s1">{"symbol": "ACWF", "fund_name": "iShares Edge MSCI Multifactor Global ETF", "rating": 3, "morningstar_category": "World Large Stock", "category": "Equity", "family": "iShares", "market_cap": "large", "description": "The investment seeks to track the investment results of the MSCI ACWI Diversified Multiple-Factor Index.\\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index is designed to contain equity securities from the MSCI ACWI Index (the \\\"parent index\\\") that have high exposure to four investment style factors: value, quality, momentum and low size, while maintaining a level of risk similar to that of the parent index.","exchange": "NYSE Arca"}</span></p>
+<p class="p15"><span class="s1">{"update": {"_index":"cf_etf", "_type":"_doc", "_id":"1"}}</span></p>
+<p class="p15"><span class="s1">{"script":"ctx._source.remove('market_cap')"}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">bulk_api</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_bulk" --header "Content-Type: application/json" --data $'{\"delete\": {\"_index\":\"cf_etf\", \"_id\":\"1\"}}\n{\"create\": {\"_index\":\"cf_etf\", \"_id\":\"1\"}}\n{\"symbol\": \"ACWF\", \"fund_name\": \"iShares Edge MSCI Multifactor Global ETF\", \"rating\": 3, \"morningstar_category\": \"World Large Stock\", \"category\": \"Equity\", \"family\": \"iShares\", \"market_cap\": \"large\", \"description\": \"The investment seeks to track the investment results of the MSCI ACWI Diversified Multiple-Factor Index.\\\ The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index is designed to contain equity securities from the MSCI ACWI Index \(the \\\\\\\"parent index\\\\\\\"\) that have high exposure to four investment style factors: value, quality, momentum and low size, while maintaining a level of risk similar to that of the parent index.\",\"exchange\": \"NYSE Arca\"}\n{\"update\": {\"_index\":\"cf_etf\", \"_type\":\"_doc\", \"_id\":\"1\"}}\n{\"script\":\"ctx._source.remove(\'market_cap\')\"}\n'</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s6">POST</span><span class="s1"> update_by_query<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf/_update_by_query</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{"script":"if (ctx._source['rating']==3) {ctx._source['rating']=4}"}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">update_by_query</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/cf_etf/_update_by_query" --header "Content-Type: application/json" --data $'{\"script\":\"if (ctx._source[\'rating\']==3) {ctx._source[\'rating\']=4}\"}'</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s6">POST</span><span class="s1"> delete_by_query<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/cf_etf/_delete_by_query?conflicts=proceed</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">PARAMS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">conflicts</span></p>
+<p class="p7"><span class="s1">proceed</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{"query":{"match":{"rating":4}}}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">delete_by_query</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/cf_etf/_delete_by_query?conflicts=proceed" --header "Content-Type: application/json" --data "{\"query\":{\"match\":{\"rating\":4}}}"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p5"><span class="s6">POST</span><span class="s1"> reindex_api<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">http://localhost:9200/_reindex</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">HEADERS</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1">Content-Type</span></p>
+<p class="p7"><span class="s1">application/json</span></p>
+<p class="p7"><span class="s1">BODY</span></p>
+<p class="p8"><span class="s1"><br>
+</span></p>
+<p class="p15"><span class="s1">{</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"source": {"index":"cf_view"},</span></p>
+<p class="p15"><span class="s1"><span class="Apple-tab-span">	</span>"dest": {"index": "cf_etf"}</span></p>
+<p class="p15"><span class="s1">}</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1">Example Request</span></p>
+<p class="p12"><span class="s1">reindex_api</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p14"><span class="s1">curl --location --request POST "http://localhost:9200/_reindex" --header "Content-Type: application/json" --data "{\"source\": {\"index\":\"cf_view\"},\"dest\": {\"index\": \"cf_etf\"}}"</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p16"><span class="s1">CHAPTER3</span></p>
+</body>
+</html>
