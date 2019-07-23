@@ -1,4 +1,4 @@
-rom com.example.client.config.low_level_client_by_connection import ESLowLevelClientByConnection
+from com.example.client.config.low_level_client_by_connection import ESLowLevelClientByConnection
 from elasticsearch_dsl import Search
 from elasticsearch_dsl.query import Q, Bool, Range, Term
 from elasticsearch_dsl.aggs import A, DateHistogram
