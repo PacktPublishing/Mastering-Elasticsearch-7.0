@@ -3,7 +3,7 @@
 		"dynamic": false,
 		"properties": {
 			"symbol": {"type": "keyword"},
-			"fund_name": {"type": "text"},
+			"fund_name": {"type": "text", "fields": {"raw": {"type":"keyword"}}, "analyzer":"description_analyzer", "search_analyzer":"description_analyzer"},
 			"rating": {"type": "byte"},
 			"morningstar_category": {"type": "keyword"},
 			"category": {"type": "keyword"},

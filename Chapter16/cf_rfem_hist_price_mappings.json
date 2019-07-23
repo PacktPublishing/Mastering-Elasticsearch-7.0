@@ -43,14 +43,8 @@
                         }
                     }
                 },
-                "unadjustedVolume": {
-                    "type": "long"
-                },
                 "volume": {
                     "type": "long"
-                },
-                "vwap": {
-                    "type": "float"
                 },
 		"prediction": {
 		    "type": "integer"

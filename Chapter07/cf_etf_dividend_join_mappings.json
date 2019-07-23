@@ -29,42 +29,12 @@
         "amount": { "type": "float" },
         "declaredDate": { "type": "date" },
         "exDate": { "type": "date" },
-        "flag": { "type": "text", 
-                "fields": { 
-                  "keyword": {
-                    "type": "keyword",
-                     "ignore_above": 256
-                  } 
-                } 
-        }, 
-        "indicated": {
-                "type": "text",
-                "fields": {
-                  "keyword": {
-                    "type": "keyword",
-                    "ignore_above": 256
-                  }  
-                }  
-        },  
+        "flag": { "type": "keyword"}, 
         "paymentDate": { "type": "date" },
-        "qualified": { "type": "text",
-                "fields": {
-                  "keyword": {
-                    "type": "keyword",
-                    "ignore_above": 256
-                  }
-                }       
-        },                 
         "recordDate": { "type": "date" },
-        "type": { "type": "text", 
-                 "fields": {            
-                   "keyword": {
-                     "type": "keyword",
-                     "ignore_above": 256
-                   }    
-                 }              
+        "currency": { "type": "keyword"},
+        "frequency": { "type": "keyword"}
        }
-     }
    },
 	"settings": {
 		"index": {
