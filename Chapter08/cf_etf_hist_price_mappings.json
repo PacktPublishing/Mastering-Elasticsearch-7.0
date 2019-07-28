@@ -34,15 +34,7 @@
                 "open": {
                     "type": "float"
                 },
-                "symbol": {
-                    "type": "text",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
-                },
+                "symbol": { "type": "keyword" },
                 "volume": {
                     "type": "long"
                 }
