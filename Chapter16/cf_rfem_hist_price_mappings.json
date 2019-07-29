@@ -34,7 +34,7 @@
                 "open": {
                     "type": "float"
                 },
-                "symbol": { "type": "keyword" },
+                "symbol": { "type": "keyword", "normalizer":"lowcase_normalizer" },
                 "volume": {
                     "type": "long"
                 },
@@ -42,5 +42,15 @@
 		    "type": "integer"
 		}
             }
+        },
+        "settings": {
+          "analysis" : {
+                "normalizer": {
+                        "lowcase_normalizer": {
+                                "type": "custom",
+                                "filter": ["lowercase", "asciifolding"]
+                        }
+                }
+          }
         }
 }
